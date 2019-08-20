@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTC-8">
+  <title>Latitude Dashboard</title>
+  <!-- Linking Bootstrap stylesheet-->
+  <!-- Latest compiled and minified CSS -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <!-- adding in top nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="Temp.html">Max Temperature</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- add in the header, photo and blurb -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <h1>Cloudiness</h1>
+        <img src="cloudiness.png" width="600px">
+        <p>There does not appear to be a relaitonship between a citys latitude and the amount of cloud cover experienced there.
+          The plots shown are fairly evenly distributed, but do not show a relaitonship.
+        </p>
+
+<!-- Visualizations sidebar starts here -->
+      </div>
+      <div class="col-md-4 sidebar">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Visualizations</h3>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-md-3">
+            <a href="Temp.html">Temperature<img src="temp.png" width="150px" height="125px"></a>
+          </div>
+          <div class="col-md-3"></div>
+
+          <div class="col-md-3">
+            <a href="humidity.html">Humidity<img src="humidity.png" width="150px" height="125px"></a>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+
+          <div class="col-md-3">
+            <a href="cloudiness.html">Cloudiness<img src="cloudiness.png" width="150px" height="125px"></a>
+          </div>
+          <div class="col-md-3"></div>
+
+          <div class="col-md-3">
+            <a href="wind_speed.html">WindSpeed<img src="windspeed.png" width="150px" height="125px"></a>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+</body>
+<html>
